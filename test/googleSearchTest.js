@@ -29,7 +29,12 @@
 // });
 
 
-const { Builder, By, Key } = require("selenium-webdriver");
+// const { Builder, By, Key } = require("selenium-webdriver");
+
+
+import { Builder, By, Key, until } from "selenium-webdriver";
+import { expect } from "chai";
+import mocha from 'mocha';
 
 async function runTest() {
     let driver = await new Builder()
