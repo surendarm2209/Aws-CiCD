@@ -20,7 +20,7 @@ describe("Google Search Test", function () {
     let searchBox = await driver.findElement(By.name("q"));
     await searchBox.sendKeys("WebDriver", Key.RETURN);
 
-    // ✅ Wait for search results to appear before checking the title
+    // ✅ Wait for search results to appear before checking the title 123
     await driver.wait(until.titleContains("WebDriver"), 5000);
 
     let title = await driver.getTitle();
